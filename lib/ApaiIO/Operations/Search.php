@@ -47,6 +47,20 @@ class Search extends AbstractOperation
         return $this;
     }
 
+	/**
+	 * Sets the amazon condition
+	 *
+	 * @param string $condition
+	 *
+	 * @return \ApaiIO\Operations\Search
+	 */
+	public function setCondition($condition)
+	{
+		$this->parameter['Condition'] = $condition;
+
+		return $this;
+	}
+
     /**
      * Sets the keywords
      *
